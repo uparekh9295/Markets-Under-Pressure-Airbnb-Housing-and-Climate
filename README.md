@@ -1,4 +1,4 @@
-# Climate at Checkout: Airbnb, Climate Exposure, and Urban Vulnerability Across U.S. Cities
+# Markets Under Pressure: Airbnb, Housing and Climate Vulnerability Across U.S. Cities
 
 ## Overview
 
