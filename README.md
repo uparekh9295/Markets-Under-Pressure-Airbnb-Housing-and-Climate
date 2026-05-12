@@ -221,8 +221,7 @@ project-folder/
 ├── outputs/
 │   ├── maps/
 │   ├── plots/
-│   ├── tables/
-│
+│   
 ├── README.md
 ├── LICENSE
 ```
@@ -291,5 +290,5 @@ Potential future directions:
 M.S. Data Analytics & Visualization  
 Pratt Institute School of Information
 
-GitHub Portfolio Project — 2026
+
 ```
