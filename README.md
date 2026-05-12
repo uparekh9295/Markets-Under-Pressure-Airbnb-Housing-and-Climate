@@ -128,3 +128,168 @@ https://trends.google.com/
 
 ```plaintext
 data/raw/
+
+```
+
+5. Update file paths if needed before running the scripts.
+
+### Note
+
+Calendar-based metrics continuously update over time. Results may vary slightly depending on when the data is downloaded.
+
+---
+
+# Methodology
+
+## 1. Data Cleaning
+- Cleaned and standardized Airbnb datasets
+- Corrected coordinate parsing issues
+- Merged listing, review, and calendar data
+
+## 2. Spatial Integration
+- Converted Airbnb listings into spatial points
+- Joined listings to census tracts using `sf`
+- Aggregated Airbnb metrics by tract
+- Integrated ACS demographic variables
+- Integrated FEMA climate risk variables
+
+## 3. Exploratory Analysis
+- Compared nightly rates across cities
+- Visualized climate hazard profiles
+- Mapped climate exposure spatially
+
+## 4. Regression Modeling
+- Tested relationships between:
+  - Airbnb density
+  - Pricing
+  - Occupancy
+  - Climate risk
+- Evaluated hazard-specific relationships
+
+## 5. Clustering Analysis
+- Used k-means clustering
+- Grouped census tracts into urban typologies based on:
+  - Income
+  - Rent
+  - Airbnb density
+  - Occupancy
+  - Climate risk
+
+## 6. Time-Series Forecasting
+- Analyzed Google Trends search interest
+- Decomposition analysis
+- Autocorrelation testing
+- Holt-Winters forecasting
+
+## 7. Spatial Diagnostics
+- Moran’s I spatial autocorrelation
+- Spatial lag regression
+- OLS vs spatial model comparison
+
+---
+
+# Key Insights
+
+- Higher climate risk was associated with lower Airbnb density overall.
+- Climate exposure did not consistently reduce occupancy or revenue.
+- Wildfire-prone areas still showed high nightly rates.
+- Tourism demand continued in environmentally vulnerable locations.
+- Miami and New Orleans showed strong seasonal tourism patterns.
+- Climate vulnerability clustered spatially more strongly than Airbnb density itself.
+- Different cities displayed distinct climate-tourism profiles.
+
+---
+
+# Repository Structure
+
+```plaintext
+project-folder/
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│
+├── scripts/
+│   ├── 01_setup_and_data_cleaning.R
+│   ├── 02_spatial_data_integration.R
+│   ├── 03_exploratory_visualization.R
+│   ├── 04_spatial_mapping.R
+│   ├── 05_regression_and_clustering.R
+│   ├── 06_temporal_analysis_and_forecasting.R
+│   ├── 07_spatial_diagnostics_optional.R
+│
+├── outputs/
+│   ├── maps/
+│   ├── plots/
+│   ├── tables/
+│
+├── README.md
+├── LICENSE
+```
+
+---
+
+# Tools & Libraries
+
+## Software
+- R
+- RStudio
+- ArcGIS Pro
+- GitHub
+
+## Main R Libraries
+- tidyverse
+- sf
+- tigris
+- tidycensus
+- ggplot2
+- forecast
+- TTR
+- factoextra
+- spdep
+- spatialreg
+- patchwork
+
+---
+
+# Main Visualizations
+
+- FEMA climate risk maps
+- Hazard-specific spatial maps
+- Climate hazard heatmaps
+- Airbnb density vs risk scatterplots
+- Occupancy by climate risk tier
+- Clustering visualizations
+- Google Trends temporal comparisons
+- Holt-Winters forecasting plots
+
+---
+
+# Conclusion
+
+This project shows that tourism economies increasingly operate inside environmentally vulnerable urban regions rather than outside them. Climate exposure does not uniformly reduce Airbnb activity, and some high-risk areas continue to remain economically active tourism zones.
+
+The analysis suggests that climate vulnerability and tourism development coexist in uneven and sometimes contradictory ways across cities. Rather than producing a simple relationship between risk and decline, the project reveals how urban tourism systems continue adapting to — and sometimes ignoring — environmental exposure.
+
+---
+
+# Next Steps
+
+Potential future directions:
+- Incorporate longitudinal Airbnb pricing data
+- Compare international tourism cities
+- Integrate sea-level rise projections
+- Analyze post-disaster tourism recovery
+- Build interactive web maps and dashboards
+- Examine policy differences between cities
+
+---
+
+# Author
+
+**Uttara Parekh**  
+M.S. Data Analytics & Visualization  
+Pratt Institute School of Information
+
+GitHub Portfolio Project — 2026
+```
