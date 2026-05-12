@@ -60,9 +60,6 @@ Airbnb listing, review, and calendar data were downloaded from:
 - AirROI Data Portal  
   https://www.airroi.com/data-portal/regions/north-america
 
-- Inside Airbnb  
-  https://insideairbnb.com/get-the-data/
-
 The datasets include:
 - Listing characteristics
 - Pricing
